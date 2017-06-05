@@ -2,6 +2,7 @@ package co.ejemplos.typeclass
 
 import Printable._
 import PrintableInstances._
+import PrintableSyntax._
 
 /**
  * Utilizacion del type class.
@@ -26,5 +27,7 @@ object Main extends App{
   val cat = Cat("leo", 10, "negro" )
 
   Printable.print(cat)
+
+  Cat("oscar",12,"blanco").print
 
 }
